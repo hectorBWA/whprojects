@@ -1,0 +1,37 @@
+body {
+  background-color: red;
+  color: white;
+  font-family: cooper;
+}
+
+nav {
+  border: solid 10px yellow;
+}
+
+header {
+  display: flex;
+}
+
+ul {
+  background-color: #e7299e;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 75%;
+  background-color: green;
+}
+
+aside {
+  width: 25%;
+}
+
+section {
+  width: 100%;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

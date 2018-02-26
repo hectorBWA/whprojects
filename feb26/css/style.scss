@@ -1,0 +1,37 @@
+body {
+background-color: rgb(255, 0, 0);
+color:white;
+font-family: cooper;
+}
+
+nav {
+border: solid 10px yellow;
+}
+
+header{
+display:flex;
+}
+
+ul{
+background-color: rgb(231, 41, 158);
+}
+
+main{
+display:flex;
+flex-wrap:wrap;
+// flex-direction: column;
+}
+
+article {
+width: 75%;
+background-color: green;
+}
+
+aside{
+width: 25%;
+}
+
+section{
+width: 100%;
+background-color: blue;
+}
