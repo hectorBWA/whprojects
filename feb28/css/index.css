@@ -1,0 +1,25 @@
+body {
+  background-color: #09ff00;
+}
+
+section {
+  background-color: black;
+  padding: 10px;
+  margin: 50px;
+  height: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  font-size: 40px;
+  color: white;
+  background-color: #09ff00;
+  margin: 5px;
+}
+/*# sourceMappingURL=index.css.map */

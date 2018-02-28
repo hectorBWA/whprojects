@@ -1,0 +1,55 @@
+$white: hsl(0, 0%, 96%);
+
+html {
+    background-image: url('../images/overlay.png'), url('../images/bg.jpg') ;
+    background-size: 25%, cover;
+    background-repeat: no-repeat;
+    padding: 75px 0 25px 0;
+}
+
+body{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: $white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+ul{
+    display:flex;
+    justify-content:space-between;
+    padding:25px;
+    margin:0;
+    list-style: none;
+}
+
+header{
+ height:500px;
+ background-image: linear-gradient( rgba(162, 3, 202, 0.301), rgba(94, 1, 86, 0.404)), url('../images/pic01.jpg');
+ background-size:cover;
+ display:flex;
+ flex-direction: column;
+}
+
+div{
+    background-color: red;
+    width:50vw;
+    text-align: center;
+    padding:50px;
+    margin:auto;
+}
+
+h1{
+    font-size:48px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    border:2px solid $white;
+    padding:15px;
+    display:inline-block;
+    border-radius: 4px;
+}
