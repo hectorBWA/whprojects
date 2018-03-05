@@ -1,0 +1,101 @@
+$white:hsl(0, 0, 96%);
+$black: hsl(204, 6%, 17%);
+$ignite: hsl(191, 58%, 42%);
+$classic: hsl(11, 50%, 42%);
+
+
+body{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    color:$white;
+}
+
+h1{
+    margin:0;
+}
+
+header{
+    height:200px;
+    display: flex;
+    overflow: hidden;
+    background-color: $black;
+    position: relative;
+}
+
+.skew{
+    width: 50vw;
+    transform: skew(-45deg);
+    transform-origin: left bottom;
+}
+
+.ignite{
+    background-color:$ignite;
+    
+}
+
+.classic{
+    background-color:$classic;
+    background-image: url('../images/download2.svg'); 
+    background-repeat:repeat-y;
+    background-size:100px;
+}
+
+.text{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+}
+
+.logo{
+    width: 200px;
+    height: 100%;
+    flex:none;
+    img{
+        width:50%;
+    }
+}
+
+.marquee{
+    margin-left:-75px;
+    display:flex;
+    align-items: center;
+    h1{
+        text-shadow: 0 0 13px transparentize(black, .5);
+    }
+}
+
+@media print{
+    header{
+        height:500px;
+        font-size:300%;
+    }
+    .skew{
+        display:none;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .ignite{
+        background-color: red;
+    }
+
+    .classic{
+        background-color: blue;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    h1{
+        font-size:150%;
+    }
+}
+
+@media screen and (max-width:472px) {
+    h1{
+        font-size: 75%;
+    }
+}
