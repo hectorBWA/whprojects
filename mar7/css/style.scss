@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(220, 207, 20);
+    font-family: sans-serif;
+}
+
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+nav#horizontal{
+    background-color: rgb(19, 10, 10);
+    padding:10px;
+    color:rgb(214, 213, 213);
+}
+
+nav#horizontal ul {
+    display:flex;
+    justify-content: space-between;
+    a{
+        display:inline-block;
+        color:inherit;
+        text-decoration: none;
+        font-weight: 100;
+    }
+    a:hover, a.active{
+        color:rgb(169, 97, 236);
+        background-color:maroon;
+    }
+}
+
+nav#dropdown{
+    background-color:tomato;
+    padding:10px;
+    color:black;
+}
+
+nav#dropdown ul{
+    & li{
+        display: inline-block;
+        position:relative
+    }
+    & li:nth-child(1):hover{
+        ul{
+            display:block;
+        }
+    }
+    ul{
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 61);
+        padding: 10px;
+        width:200px;
+        li{
+            white-space:nowrap;
+            display: block;
+        }
+        li:not(:last-child){
+            border-bottom:1px solid black;
+        }
+        a{
+            display: block;
+            padding-right:20px;
+            transition:all 250ms;
+        }
+        a:hover{
+            color:white;
+            border-left: 3px solid brown;
+            text-indent: 3px;
+        }
+    }
+    a{
+        display:inline-block;
+        padding:5px;
+        color:inherit;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: rgb(250, 159, 143);
+    }
+
+}
+
+nav#dropdown ul:hover{
+
+}
+
+.stuff{
+    width:calc(100% - 40px);
+    background-color: red;
+    padding:40px;
+    border:10px solid blue;
+    margin:20px;
+    box-sizing: border-box;
+}

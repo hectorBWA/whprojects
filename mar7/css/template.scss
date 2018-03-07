@@ -1,0 +1,86 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body{
+    background-color: yellow;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin:0;
+}
+
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    text-transform: uppercase;
+    border:none;
+    padding:10px 30px;
+    border-radius: 4px;
+}
+header{
+    text-align: center;
+    background-image: url('http://unsplash.it/1000/500?image=700');
+    padding-bottom: 100px;
+    color:white;
+}
+nav{
+    background-color: white;
+    margin-bottom: 100px;
+    color:black;
+    padding:10px;
+    ul{
+        display:flex;
+    }
+    li:first-child{
+        margin-right:auto;
+        text-transform:uppercase;
+    }
+    a{
+        padding:5px 15px;
+    }
+}
+
+.signup{
+    background-color: hsl(208,55%,60%);
+    color:white;
+    border-radius: 4px;
+}
+
+
+h2{
+    text-align: center;
+    padding-top:30px;
+}
+p{
+    text-align: center;
+    padding-bottom:20px;
+}
+#features ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:20px;
+    li{
+        width:20%;
+        padding:40px;
+        border:1px solid black;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align:center;
+    }
+    i{
+        font-size:300%;
+        color:black;
+    }
+}
+
+h3{
+    text-transform: uppercase;
+}
+
