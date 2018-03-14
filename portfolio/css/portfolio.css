@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Ceviche+One");
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin: 0;
   background-color: #dddddd;
   font-family: 'Signika Negative', sans-serif;
 }
 
 .block {
+  z-index: 9999;
   position: fixed;
   background-color: #303030;
   background-image: url("/img/anders-jilden-37603-unsplash.jpg");
@@ -15,17 +18,27 @@ body {
   border-bottom: 3px solid black;
   width: 100%;
   height: 200px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 h1 {
+  animation-name: typing;
+  animation-duration: 4s;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(60, end), blink-caret 0.7s step-end infinite;
   margin-top: 35px;
   margin-bottom: 28px;
-  color: #272424;
+  color: #2672ff;
   font-weight: 700;
   font-family: 'Ceviche One', cursive;
   font-size: 80px;
   text-align: center;
-  text-shadow: 4px 4px #ffbdbd;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.575);
 }
 
 header {
@@ -35,9 +48,8 @@ header {
 }
 
 .button {
-  color: white;
   padding: 10px;
-  background-color: #ee3b35;
+  background-color: rgba(238, 59, 53, 0.651);
   margin: 20px;
   margin-top: 12px;
   font-size: 15px;
@@ -47,14 +59,32 @@ header {
 }
 
 .button a {
-  color: white;
+  color: #0c0b0b;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .button:hover {
   color: white;
-  background-color: #303030;
+  background-color: #ffffff3b;
+}
+
+.button2 {
+  z-index: 9999;
+  width: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  margin-top: 12px;
+  font-size: 15px;
+  border: 3px solid black;
+  border-radius: 10px 10px 0px 0px;
+  transition: all 250ms;
+}
+
+.button2:hover {
+  width: 200px;
+  background-color: #ffffff3b;
 }
 
 .row {
@@ -71,9 +101,10 @@ section {
 }
 
 .bar {
+  color: #201a1a;
   margin: 0 auto;
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-color: #3870e9;
   border-bottom: 5px solid black;
   text-align: left;
@@ -81,12 +112,18 @@ section {
   font-family: 'Ceviche One', cursive;
   padding: 10px;
   border-radius: 2px;
+  transition: all 250ms;
+}
+
+.bar:hover {
+  background-color: #233457;
 }
 
 .bar2 {
+  color: #201a1a;
   margin: 0 auto;
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-color: #ee3b35;
   border-bottom: 5px solid black;
   text-align: left;
@@ -94,12 +131,18 @@ section {
   font-family: 'Ceviche One', cursive;
   padding: 10px;
   border-radius: 2px;
+  transition: all 250ms;
+}
+
+.bar2:hover {
+  background-color: #752320;
 }
 
 .bar3 {
+  color: #201a1a;
   margin: 0 auto;
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-color: #3870e9;
   border-bottom: 5px solid black;
   text-align: left;
@@ -107,21 +150,50 @@ section {
   font-family: 'Ceviche One', cursive;
   padding: 10px;
   border-radius: 2px;
+  transition: all 250ms;
+}
+
+.bar3 a {
+  text-decoration: none;
+  color: #f87676;
+  transition: all 250ms;
+}
+
+.bar3:hover {
+  background-color: #233457;
+}
+
+.bar3:hover a {
+  color: white;
+  background-color: #fa4343;
+  border-radius: 5px;
 }
 
 .bar4 {
   margin: 0 auto;
   width: 100%;
-  height: 60px;
-  background-color: #ee3b35;
+  height: 180px;
+  background-color: #201a1a;
+  color: #201a1a;
+  background-image: url("/img/pattern.png");
   text-align: center;
   font-size: 42px;
   font-family: 'Ceviche One', cursive;
-  padding: 40px;
-  border-radius: 2px;
+  padding-top: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(231, 226, 226, 0.835);
+  transition: all 400ms;
+}
+
+.bar4:hover {
+  font-size: 52px;
 }
 
 .message {
+  animation-name: effects;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   color: white;
   padding: 10px;
   border-left: 2px solid black;
@@ -130,6 +202,10 @@ section {
 }
 
 .info {
+  animation-name: effects;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   color: white;
   padding: 10px;
   border-left: 2px solid black;
@@ -138,6 +214,10 @@ section {
 }
 
 .house {
+  animation-name: effects;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   color: white;
   padding: 10px;
   border-left: 2px solid black;
@@ -166,5 +246,45 @@ section {
 .features ul li:hover {
   background-color: #0a3d9c;
   color: #a5c2f8;
+  background-image: url("/img/72m5zr_large.png");
+  background-size: 125px;
+  background-repeat: no-repeat;
+}
+
+@keyframes effects {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 0px;
+  background: #0a0808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8c8efd;
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
