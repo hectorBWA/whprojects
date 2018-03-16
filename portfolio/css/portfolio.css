@@ -25,12 +25,11 @@ body {
 
 h1 {
   animation-name: typing;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-delay: 200ms;
   animation-fill-mode: forwards;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 1s steps(60, end), blink-caret 0.7s step-end infinite;
   margin-top: 35px;
   margin-bottom: 28px;
   color: #2672ff;
