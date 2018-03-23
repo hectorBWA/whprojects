@@ -1,0 +1,33 @@
+nav{
+    background-color: red;
+    ul{
+        padding:0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin: 0;
+    }
+}
+
+nav.vertical{
+    position: fixed;
+    width:25%;
+    height:100vh;
+    ul{
+        flex-direction: column;
+
+    }
+}
+
+main.vertical{
+    margin-left: 28%;
+}
+
+
+span.mega{
+    font-size: 200%;
+    color:pink;
+}
