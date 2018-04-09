@@ -93,6 +93,7 @@
 // }
 // getAge();
 
+document.body.style.backgroundColor = "#ff0000";
 
 var noun = prompt('Choose a nickname.');
 var name = noun;
