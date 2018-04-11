@@ -1,1 +1,33 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+p {
+  color: white;
+}
+
+.wrap {
+  background-color: #e45151;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.wrap h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.options {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.storyline {
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 50px;
+  width: 500px;
+  background-color: black;
+  border: solid black 1px;
+}
+/*# sourceMappingURL=style.css.map */
