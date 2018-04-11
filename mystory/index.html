@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+        
+
+
     <h1>Select a location to adventure.</h1>
-    <button id="btn1">Space</button>
-    <button id="btn2">Ocean</button>
-    <button id="btn3">Volcano</button>
+
+    <button id="btn1" href="#" onclick="document.getElementById('hiddenText').style.display='block'; return false;">Space</button>
+
+
+
+    <button id="btn2"  href="#" onclick="document.getElementById('hiddenText').style.display='block'; return false;">Ocean</button>
+    
+    <button id="btn3"  href="#" onclick="document.getElementById('hiddenText').style.display='block'; return false;">Volcano</button>
+    <div style="display: none;" id="hiddenText"><p id="space"></p></div>
+   
 
     <script src="js/script.js"></script>
 </body>
