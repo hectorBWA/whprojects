@@ -2,15 +2,14 @@ var spaceBtn = document.getElementById('btn1');
 var waterBtn = document.getElementById('btn2');
 var fireBtn = document.getElementById('btn3');
 var contBtn = document.getElementById('btn4');
-var endBtn = document.getElementById('btn5');
 var spaceStory = document.getElementById('space');
-var contStory = document.getElementById('cont');
+
+
 
 spaceBtn.addEventListener('click', getSpace);
 waterBtn.addEventListener('click', getWater);
 fireBtn.addEventListener('click', getFire);
-contBtn.addEventListener('click', getCont);
-endBtn.addEventListener('click', getEnd);
+// contBtn.addEventListener('click', getCont);
 
 var noun = prompt('Choose a nickname.');
 var name = noun;
@@ -28,14 +27,14 @@ var story = 'Hello ' + name + " ";
 
 
 function getSpace(){
-    spaceStory.innerHTML = story + "your space shuttle just crashed on mars. The only materials that survived the crash are " + tools + " and an oxygen tank. You will need to use your " + tools + " to find a way off the planet before the oxygen tank runs out. " + "(" + timeframe + " hours)" + " You also have " + needs + " to keep your energy up. At this point you feel hopeless and lost. You can either jump off the plant or explore, which will you do?";
+    spaceStory.innerHTML = story + "your space shuttle just crashed on mars. The only materials that survived the crash are " + tools + " and an oxygen tank. You will need to use your " + tools + " to find a way off the planet before the oxygen tank runs out. " + "(" + timeframe + " hours)" + " You also have " + needs + " to keep your energy up. At this point you feel hopeless and lost. Instead of giving up you decide to explore th eplanet. Click continue.";
     document.body.style.backgroundColor = "purple";
     
 }
 getSpace();
 
 function getWater(){
-    spaceStory.innerHTML = story + "you have been voyaging across the atlantic for " + timeframe + " days. You haven't had any " + needs + " since you got hungry the first day. After rounding the same island " + timeframe + " times, you realize you have sailed too far. Immediately your survival instincts kick in and you pull out " + tools + " from your backpack." ;
+    spaceStory.innerHTML = story + "you have been voyaging across the atlantic for " + timeframe + " days. You haven't had any " + needs + " since you got hungry the first day. After rounding the same island " + timeframe + " times, you realize you have sailed too far. Immediately your survival instincts kick in and you pull out " + tools + " from your backpack. Click Continue." ;
     document.body.style.backgroundColor = "blue";
 }
 getWater();
@@ -48,16 +47,16 @@ getFire();
 
 
 function getCont(){
-    spaceStory.innerHTML = "excellent choice." ;
+    var savior = prompt("who will come to your rescue?");
+    var things = prompt("Name a tool.");
+    var snack  = prompt("Pick a snack");
+    spaceStory.innerHTML = "To your suprise, you see " + savior + " come to your rescue, he brought your favorite " + snack  + " to eat.";
 }
 getCont();
 
 
 
-function getEnd(){
-    spaceStory.innerHTML = "RIP" ;
-}
-getEnd();
+
 
 
 
