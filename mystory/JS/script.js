@@ -9,7 +9,7 @@ var spaceStory = document.getElementById('space');
 spaceBtn.addEventListener('click', getSpace);
 waterBtn.addEventListener('click', getWater);
 fireBtn.addEventListener('click', getFire);
-// contBtn.addEventListener('click', getCont);
+contBtn.addEventListener('click', getCont);
 
 var noun = prompt('Choose a nickname.');
 var name = noun;
@@ -27,7 +27,7 @@ var story = 'Hello ' + name + " ";
 
 
 function getSpace(){
-    spaceStory.innerHTML = story + "your space shuttle just crashed on mars. The only materials that survived the crash are " + tools + " and an oxygen tank. You will need to use your " + tools + " to find a way off the planet before the oxygen tank runs out. " + "(" + timeframe + " hours)" + " You also have " + needs + " to keep your energy up. At this point you feel hopeless and lost. Instead of giving up you decide to explore th eplanet. Click continue.";
+    spaceStory.innerHTML = story + "your space shuttle just crashed on mars. The only materials that survived the crash are " + tools + " and an oxygen tank. You will need to use your " + tools + " to find a way off the planet before the oxygen tank runs out. " + "(" + timeframe + " hours)" + " You also have " + needs + " to keep your energy up. At this point you feel hopeless and lost. Instead of giving up you decide to explore the planet. Click continue.";
     document.body.style.backgroundColor = "purple";
     
 }
@@ -46,11 +46,13 @@ function getFire(){
 getFire();
 
 
+var savior = prompt("Name a celebrity.");
+var things = prompt("Name a tool.");
+var snack  = prompt("What is your favorite snack?");
+
 function getCont(){
-    var savior = prompt("who will come to your rescue?");
-    var things = prompt("Name a tool.");
-    var snack  = prompt("Pick a snack");
-    spaceStory.innerHTML = "To your suprise, you see " + savior + " come to your rescue, he brought your favorite " + snack  + " to eat.";
+    
+    spaceStory.innerHTML = "To your suprise, you see " + savior + " approach from a distance. Could it be? are you being rescued? You notice " + savior + " is carrying a " + things  + " and " + snack + " for you to eat. Although you get excited, you are offered a trade. You become a servant for the next 10 years or be left to rot for the remainder of your days. What will you do?";
 }
 getCont();
 
