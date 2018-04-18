@@ -31,12 +31,9 @@ p {
   border: solid white 1px;
 }
 
-.button4 {
-  margin: 0;
-  padding: 10;
-  font-size: 15px;
-  border: #0e0707 solid 3px;
-  background-color: #d31212;
-  color: #020101;
+a {
+  background-color: white;
+  color: black;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
