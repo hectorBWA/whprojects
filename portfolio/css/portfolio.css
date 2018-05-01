@@ -12,7 +12,7 @@ body {
   z-index: 9999;
   position: fixed;
   background-color: #303030;
-  background-image: url("/img/anders-jilden-37603-unsplash.jpg");
+  background-image: url("/img/lee-jeffs-317648-unsplash.jpg");
   background-size: 100%;
   background-position: 0px -250px;
   border-bottom: 3px solid black;
@@ -26,7 +26,7 @@ body {
 h1 {
   margin-top: 35px;
   margin-bottom: 28px;
-  color: #2672ff;
+  color: #e9edf3;
   font-weight: 700;
   font-family: 'Ceviche One', cursive;
   font-size: 80px;
@@ -42,7 +42,7 @@ header {
 
 .button {
   padding: 10px;
-  background-color: rgba(238, 59, 53, 0.651);
+  background-color: rgba(15, 12, 194, 0.185);
   margin: 20px;
   margin-top: 12px;
   font-size: 15px;
@@ -66,7 +66,7 @@ header {
   z-index: 9999;
   width: 10px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(57, 23, 211, 0.411);
   margin: 20px;
   margin-top: 12px;
   font-size: 15px;
@@ -94,22 +94,17 @@ section {
 }
 
 .bar {
+  padding: 65px;
   color: #201a1a;
   margin: 0 auto;
   width: 100%;
   height: 300px;
-  background-color: #3870e9;
-  border-bottom: 5px solid black;
+  background-color: #3a25f3;
   text-align: left;
   font-size: 42px;
   font-family: 'Ceviche One', cursive;
-  padding: 10px;
   border-radius: 2px;
   transition: all 250ms;
-}
-
-.bar:hover {
-  background-color: #233457;
 }
 
 .bar2 {
@@ -117,18 +112,13 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 300px;
-  background-color: #ee3b35;
-  border-bottom: 5px solid black;
+  background-color: #3a25f3;
   text-align: left;
   font-size: 42px;
   font-family: 'Ceviche One', cursive;
-  padding: 10px;
+  padding: 65px;
   border-radius: 2px;
   transition: all 250ms;
-}
-
-.bar2:hover {
-  background-color: #752320;
 }
 
 .bar3 {
@@ -136,12 +126,12 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 300px;
-  background-color: #3870e9;
+  background-color: #3a25f3;
   border-bottom: 5px solid black;
   text-align: left;
   font-size: 42px;
   font-family: 'Ceviche One', cursive;
-  padding: 10px;
+  padding: 65px;
   border-radius: 2px;
   transition: all 250ms;
 }
@@ -150,10 +140,6 @@ section {
   text-decoration: none;
   color: #f87676;
   transition: all 250ms;
-}
-
-.bar3:hover {
-  background-color: #233457;
 }
 
 .bar3:hover a {
@@ -170,16 +156,12 @@ section {
   color: #201a1a;
   background-image: url("/img/pattern.png");
   text-align: center;
-  font-size: 42px;
+  font-size: 55px;
   font-family: 'Ceviche One', cursive;
   padding-top: 5px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(231, 226, 226, 0.835);
   transition: all 400ms;
-}
-
-.bar4:hover {
-  font-size: 52px;
 }
 
 .message {
@@ -223,12 +205,13 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  margin: 10px;
+  margin-left: -50px;
+  padding: 50px;
 }
 
 .features ul li {
   list-style: none;
-  width: 300px;
+  width: 200px;
   height: 150px;
   background-color: #a5c2f8;
   border: 3px solid black;
@@ -237,7 +220,7 @@ section {
 }
 
 .features ul li:hover {
-  background-color: #0a3d9c;
+  background-color: #db3644;
   color: #a5c2f8;
   background-image: url("/img/72m5zr_large.png");
   background-size: 125px;
