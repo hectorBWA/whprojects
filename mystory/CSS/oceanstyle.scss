@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
 body{
+    font-family: 'Do Hyeon', sans-serif;
     background-color: blue;
 }
 
@@ -21,7 +24,8 @@ body{
     margin-top: 50px;
     width:500px;
     background-color: black;
-    border:solid white 1px;
+    border:solid white 5px;
+    border-radius: 50px;
     p{
         color: white;
     }
