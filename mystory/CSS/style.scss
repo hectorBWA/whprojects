@@ -1,12 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
 p{
     color: white;
 }
 .wrap{
-    background-color: rgb(228, 81, 81);
+    
     width:500px;
     margin: 0 auto;
     margin-top:50px;
     h1{
+        font-family: 'Do Hyeon', sans-serif;
+        color:rgb(0, 0, 0);
         text-align: center;
         margin: 0 auto;
     }
@@ -21,13 +26,14 @@ p{
 }
 
 .storyline{
-
+    font-family: 'Do Hyeon', sans-serif;
     margin:0 auto;
     padding: 15px;
     margin-top: 50px;
     width:500px;
     background-color: black;
-    border:solid white 1px;
+    border:solid white 5px;
+    border-radius: 50px;
 }
 
 a{
@@ -35,4 +41,19 @@ a{
     color:black;
     border: 1px solid red;
 
+}
+
+#btn1{
+    background-color: transparent;
+    border: none;
+}
+
+#btn2{
+    background-color: transparent;
+    border: none;
+}
+
+#btn3{
+    background-color: transparent;
+    border: none;
 }
